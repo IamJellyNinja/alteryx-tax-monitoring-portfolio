@@ -1,0 +1,775 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2026.4" RunE2="T">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <DisableAutoField>False</DisableAutoField>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Tax_Fraud_Monitoring_Alteryx_Practice.xlsx
+Query=`Raw_GST_Transactions$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="record_id" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="filing_id" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="business_id" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="tax_period" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="submission_date" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="invoice_id" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="transaction_date" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="transaction_type" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="gst_code" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="taxable_amount" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="gst_rate" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="declared_gst" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="currency" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="supplier_tax_id" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="customer_tax_id" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+            <Field name="description" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Practice.xlsx|||`Raw_GST_Transactions$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Join_Recovery.xlsx|||`GST_Code_Reference$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <DisableAutoField>False</DisableAutoField>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Tax_Fraud_Monitoring_Alteryx_Join_Recovery.xlsx
+Query=`GST_Code_Reference$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="gst_code" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Join_Recovery.xlsx|||`GST_Code_Reference$`" type="V_String" />
+            <Field name="description" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Join_Recovery.xlsx|||`GST_Code_Reference$`" type="V_String" />
+            <Field name="standard_rate" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Join_Recovery.xlsx|||`GST_Code_Reference$`" type="V_String" />
+            <Field name="expected_treatment" size="255" source="File: C:\Users\Jelloshot\Downloads\Tax_Fraud_Monitoring_Alteryx_Join_Recovery.xlsx|||`GST_Code_Reference$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="330" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="gst_code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="gst_code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_gst_code" selected="True" rename="Right_gst_code" input="Right_" />
+                <SelectField field="Right_description" selected="False" rename="Right_description" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="30" y="606" width="516" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>GST Reference Code For Standard GST Guide ( To flag out abnormal GST )</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="437" y="233" width="813" height="287" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>STEP 1 : DATA QUALITY PARSER ( TO FLAG OUT ABNORMAL / DUPLICATED DATA FOR TREATMENT FOR &gt;  QUALITY DATA OUTPUT )</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>STEP 1 : DATA QUALITY PARSER ( TO FLAG OUT ABNORMAL / DUPLICATED DATA FOR TREATMENT FOR &gt;  QUALITY DATA OUTPUT )</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="462" y="329" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="record_id" selected="True" />
+                <SelectField field="filing_id" selected="True" />
+                <SelectField field="business_id" selected="True" />
+                <SelectField field="tax_period" selected="True" />
+                <SelectField field="submission_date" selected="True" />
+                <SelectField field="invoice_id" selected="True" />
+                <SelectField field="transaction_date" selected="True" />
+                <SelectField field="transaction_type" selected="True" />
+                <SelectField field="gst_code" selected="True" />
+                <SelectField field="taxable_amount" selected="True" />
+                <SelectField field="gst_rate" selected="True" />
+                <SelectField field="declared_gst" selected="True" />
+                <SelectField field="currency" selected="True" />
+                <SelectField field="supplier_tax_id" selected="True" />
+                <SelectField field="customer_tax_id" selected="True" />
+                <SelectField field="description" selected="True" />
+                <SelectField field="standard_rate" selected="True" />
+                <SelectField field="expected_treatment" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1158" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\JELLOS~1\AppData\Local\Temp\Alteryx\Engine_21000_d3ee4876dc82430e9837484c2ff310ba_\Engine_21000_ba9da38558934f0eac1a42d6edd01e1a~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="834" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotEmpty</Operator>
+                <Field>DQ_Issue_Details</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2026-11-26 15:42:09</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>PASS</Operand>
+                  <StartDate>2026-11-26 15:42:09</StartDate>
+                  <EndDate>2026-11-26 15:42:09</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsEmpty([DQ_Issue_Details])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="534" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\JELLOS~1\AppData\Local\Temp\Alteryx\Engine_21000_d3ee4876dc82430e9837484c2ff310ba_\Engine_21000_ef5bbf68a43747c1aaafa7f985f58ede~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="582" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="record_id" />
+                <Field field="filing_id" />
+                <Field field="business_id" />
+                <Field field="tax_period" />
+                <Field field="submission_date" />
+                <Field field="invoice_id" />
+                <Field field="transaction_date" />
+                <Field field="transaction_type" />
+                <Field field="gst_code" />
+                <Field field="taxable_amount" />
+                <Field field="gst_rate" />
+                <Field field="declared_gst" />
+                <Field field="currency" />
+                <Field field="supplier_tax_id" />
+                <Field field="customer_tax_id" />
+                <Field field="description" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="678" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&#xA;IIF(IsNull([record_id]) OR IsEmpty(Trim([record_id])),&#xA;&quot;MISSING_RECORD_ID; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([record_id]) AND !IsEmpty(Trim([record_id]))&#xA;AND [record_id] != UpperCase(Trim([record_id])),&#xA;&quot;RECORD_ID_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(UpperCase(Trim([record_id])),&quot;^REC[0-9]{6}$&quot;),&#xA;&quot;INVALID_RECORD_ID; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([filing_id]) OR IsEmpty(Trim([filing_id])),&#xA;&quot;MISSING_FILING_ID; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(UpperCase(Trim([filing_id])),&quot;^F[0-9]{6}$&quot;),&#xA;&quot;INVALID_FILING_ID; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([business_id]) OR IsEmpty(Trim([business_id])),&#xA;&quot;MISSING_BUSINESS_ID; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([business_id]) AND !IsEmpty(Trim([business_id]))&#xA;AND [business_id] != UpperCase(Trim([business_id])),&#xA;&quot;BUSINESS_ID_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(UpperCase(Trim([business_id])),&quot;^BIZ[0-9]{5}$&quot;),&#xA;&quot;INVALID_BUSINESS_ID; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([tax_period]) OR IsEmpty(Trim([tax_period])),&#xA;&quot;MISSING_TAX_PERIOD; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(Trim([tax_period]),&quot;^[0-9]{4}-Q[1-4]$&quot;),&#xA;&quot;INVALID_TAX_PERIOD; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([submission_date]) OR IsEmpty(Trim([submission_date])),&#xA;&quot;MISSING_SUBMISSION_DATE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!IsNull([submission_date])&#xA;AND !IsEmpty(Trim([submission_date]))&#xA;AND IsNull(DateTimeParse([submission_date],&quot;%Y-%m-%d&quot;))&#xA;AND IsNull(DateTimeParse([submission_date],&quot;%d/%m/%Y&quot;))&#xA;AND IsNull(DateTimeParse([submission_date],&quot;%d-%b-%Y&quot;)),&#xA;&quot;INVALID_SUBMISSION_DATE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!IsNull([submission_date])&#xA;AND !IsEmpty(Trim([submission_date]))&#xA;AND IsNull(DateTimeParse([submission_date],&quot;%Y-%m-%d&quot;))&#xA;AND (&#xA;!IsNull(DateTimeParse([submission_date],&quot;%d/%m/%Y&quot;))&#xA;OR !IsNull(DateTimeParse([submission_date],&quot;%d-%b-%Y&quot;))&#xA;),&#xA;&quot;NONSTANDARD_SUBMISSION_DATE; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(&#xA;    !IsNull([invoice_id])&#xA;    AND !IsEmpty(Trim([invoice_id]))&#xA;    AND !REGEX_Match(&#xA;        UpperCase(Trim([invoice_id])),&#xA;        &quot;^INV-[0-9]{6}$&quot;&#xA;    ),&#xA;    &quot;INVALID_INVOICE_ID; &quot;,&#xA;    &quot;&quot;&#xA;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([transaction_date]) OR IsEmpty(Trim([transaction_date])),&#xA;&quot;MISSING_TRANSACTION_DATE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!IsNull([transaction_date])&#xA;AND !IsEmpty(Trim([transaction_date]))&#xA;AND IsNull(DateTimeParse([transaction_date],&quot;%Y-%m-%d&quot;))&#xA;AND IsNull(DateTimeParse([transaction_date],&quot;%d/%m/%Y&quot;))&#xA;AND IsNull(DateTimeParse([transaction_date],&quot;%d-%b-%Y&quot;)),&#xA;&quot;INVALID_TRANSACTION_DATE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!IsNull([transaction_date])&#xA;AND !IsEmpty(Trim([transaction_date]))&#xA;AND IsNull(DateTimeParse([transaction_date],&quot;%Y-%m-%d&quot;))&#xA;AND (&#xA;!IsNull(DateTimeParse([transaction_date],&quot;%d/%m/%Y&quot;))&#xA;OR !IsNull(DateTimeParse([transaction_date],&quot;%d-%b-%Y&quot;))&#xA;),&#xA;&quot;NONSTANDARD_TRANSACTION_DATE; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([transaction_type]) OR IsEmpty(Trim([transaction_type])),&#xA;&quot;MISSING_TRANSACTION_TYPE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([transaction_type])&#xA;AND [transaction_type] != UpperCase(Trim([transaction_type])),&#xA;&quot;TRANSACTION_TYPE_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;UpperCase(Trim([transaction_type])) != &quot;SALE&quot;&#xA;AND UpperCase(Trim([transaction_type])) != &quot;PURCHASE&quot;&#xA;AND UpperCase(Trim([transaction_type])) != &quot;CREDIT_NOTE&quot;&#xA;AND UpperCase(Trim([transaction_type])) != &quot;IMPORT&quot;,&#xA;&quot;INVALID_TRANSACTION_TYPE; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([gst_code]) OR IsEmpty(Trim([gst_code])),&#xA;&quot;MISSING_GST_CODE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([gst_code])&#xA;AND [gst_code] != UpperCase(Trim([gst_code])),&#xA;&quot;GST_CODE_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;UpperCase(Trim([gst_code])) != &quot;SR&quot;&#xA;AND UpperCase(Trim([gst_code])) != &quot;ZR&quot;&#xA;AND UpperCase(Trim([gst_code])) != &quot;ES&quot;&#xA;AND UpperCase(Trim([gst_code])) != &quot;TX&quot;,&#xA;&quot;INVALID_GST_CODE; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([taxable_amount]) OR IsEmpty(Trim([taxable_amount])),&#xA;&quot;MISSING_TAXABLE_AMOUNT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!IsNull([taxable_amount])&#xA;AND !IsEmpty(Trim([taxable_amount]))&#xA;AND (&#xA;Contains([taxable_amount],&quot;$&quot;)&#xA;OR Contains([taxable_amount],&quot;,&quot;)&#xA;),&#xA;&quot;AMOUNT_NEEDS_STANDARDISATION; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!REGEX_Match(&#xA;Replace(Replace(Trim([taxable_amount]),&quot;$&quot;,&quot;&quot;),&quot;,&quot;,&quot;&quot;),&#xA;&quot;^-?[0-9]+([.][0-9]{1,2})?$&quot;&#xA;),&#xA;&quot;INVALID_AMOUNT_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;REGEX_Match(&#xA;Replace(Replace(Trim([taxable_amount]),&quot;$&quot;,&quot;&quot;),&quot;,&quot;,&quot;&quot;),&#xA;&quot;^-[0-9]+([.][0-9]{1,2})?$&quot;&#xA;),&#xA;&quot;NEGATIVE_AMOUNT; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([gst_rate]) OR IsEmpty(Trim([gst_rate])),&#xA;&quot;MISSING_GST_RATE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!REGEX_Match(Trim([gst_rate]),&quot;^[0-9]+([.][0-9]{1,2})?$&quot;),&#xA;&quot;INVALID_GST_RATE_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IF [gst_rate] != [standard_rate]&#xA;THEN &quot;UNEXPECTED_GST_RATE&quot;&#xA;ELSE &quot;&quot;&#xA;ENDIF&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([declared_gst]) OR IsEmpty(Trim([declared_gst])),&#xA;&quot;MISSING_DECLARED_GST; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!REGEX_Match(&#xA;Replace(Replace(Trim([declared_gst]),&quot;$&quot;,&quot;&quot;),&quot;,&quot;,&quot;&quot;),&#xA;&quot;^[0-9]+([.][0-9]{1,2})?$&quot;&#xA;),&#xA;&quot;INVALID_DECLARED_GST_FORMAT; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([currency]) OR IsEmpty(Trim([currency])),&#xA;&quot;MISSING_CURRENCY; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([currency])&#xA;AND [currency] != UpperCase(Trim([currency])),&#xA;&quot;CURRENCY_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(UpperCase(Trim([currency])) != &quot;SGD&quot;,&#xA;&quot;INVALID_CURRENCY; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([supplier_tax_id]) OR IsEmpty(Trim([supplier_tax_id])),&#xA;&quot;MISSING_SUPPLIER_TAX_ID; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(UpperCase(Trim([supplier_tax_id])),&quot;^SG[0-9]{7}A$&quot;),&#xA;&quot;INVALID_SUPPLIER_TAX_ID; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([customer_tax_id]) OR IsEmpty(Trim([customer_tax_id])),&#xA;&quot;MISSING_CUSTOMER_TAX_ID; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(UpperCase(Trim([customer_tax_id])),&quot;^SG[0-9]{7}A$&quot;),&#xA;&quot;INVALID_CUSTOMER_TAX_ID; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([description]) OR IsEmpty(Trim([description])),&#xA;&quot;MISSING_DESCRIPTION; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([description])&#xA;AND !IsEmpty(Trim([description]))&#xA;AND [description] != Trim([description]),&#xA;&quot;DESCRIPTION_WHITESPACE; &quot;,&quot;&quot;)&#xA;" field="DQ_Issue_Details" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DQ_Issue_Details = 
+IIF(IsNull([record_id]) OR IsEmpty(Trim([record_id])),
+"MISS...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1421" y="233" width="450" height="240" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Abnormal Data Treatment Center</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Abnormal Data Treatment Center</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="14">
+          <GuiSettings Plugin="Cleanse.yxmc">
+            <Position x="1446" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"business_id","transaction_date","transaction_type","gst_code","description"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1602" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&#xA;IF IsNull([transaction_date])&#xA;OR IsEmpty(Trim([transaction_date]))&#xA;THEN Null()&#xA;&#xA;ELSEIF !IsNull(&#xA;    DateTimeParse(&#xA;        UpperCase(Trim([transaction_date])),&#xA;        &quot;%Y-%m-%d&quot;&#xA;    )&#xA;)&#xA;THEN DateTimeFormat(&#xA;    DateTimeParse(&#xA;        UpperCase(Trim([transaction_date])),&#xA;        &quot;%Y-%m-%d&quot;&#xA;    ),&#xA;    &quot;%Y-%m-%d&quot;&#xA;)&#xA;&#xA;ELSEIF !IsNull(&#xA;    DateTimeParse(&#xA;        UpperCase(Trim([transaction_date])),&#xA;        &quot;%d-%b-%Y&quot;&#xA;    )&#xA;)&#xA;THEN DateTimeFormat(&#xA;    DateTimeParse(&#xA;        UpperCase(Trim([transaction_date])),&#xA;        &quot;%d-%b-%Y&quot;&#xA;    ),&#xA;    &quot;%Y-%m-%d&quot;&#xA;)&#xA;&#xA;ELSE &quot;INVALID_DATE&quot;&#xA;ENDIF&#xA;" field="transaction_date" size="255" type="V_String" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>transaction_date = 
+IF IsNull([transaction_date])
+OR IsEmpty(Trim([transaction_d...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1746" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&#xA;IIF(IsNull([record_id]) OR IsEmpty(Trim([record_id])),&#xA;&quot;MISSING_RECORD_ID; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([record_id]) AND !IsEmpty(Trim([record_id]))&#xA;AND [record_id] != UpperCase(Trim([record_id])),&#xA;&quot;RECORD_ID_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(UpperCase(Trim([record_id])),&quot;^REC[0-9]{6}$&quot;),&#xA;&quot;INVALID_RECORD_ID; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([filing_id]) OR IsEmpty(Trim([filing_id])),&#xA;&quot;MISSING_FILING_ID; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(UpperCase(Trim([filing_id])),&quot;^F[0-9]{6}$&quot;),&#xA;&quot;INVALID_FILING_ID; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([business_id]) OR IsEmpty(Trim([business_id])),&#xA;&quot;MISSING_BUSINESS_ID; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([business_id]) AND !IsEmpty(Trim([business_id]))&#xA;AND [business_id] != UpperCase(Trim([business_id])),&#xA;&quot;BUSINESS_ID_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(UpperCase(Trim([business_id])),&quot;^BIZ[0-9]{5}$&quot;),&#xA;&quot;INVALID_BUSINESS_ID; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([tax_period]) OR IsEmpty(Trim([tax_period])),&#xA;&quot;MISSING_TAX_PERIOD; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(Trim([tax_period]),&quot;^[0-9]{4}-Q[1-4]$&quot;),&#xA;&quot;INVALID_TAX_PERIOD; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([submission_date]) OR IsEmpty(Trim([submission_date])),&#xA;&quot;MISSING_SUBMISSION_DATE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!IsNull([submission_date])&#xA;AND !IsEmpty(Trim([submission_date]))&#xA;AND IsNull(DateTimeParse([submission_date],&quot;%Y-%m-%d&quot;))&#xA;AND IsNull(DateTimeParse([submission_date],&quot;%d/%m/%Y&quot;))&#xA;AND IsNull(DateTimeParse([submission_date],&quot;%d-%b-%Y&quot;)),&#xA;&quot;INVALID_SUBMISSION_DATE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!IsNull([submission_date])&#xA;AND !IsEmpty(Trim([submission_date]))&#xA;AND IsNull(DateTimeParse([submission_date],&quot;%Y-%m-%d&quot;))&#xA;AND (&#xA;!IsNull(DateTimeParse([submission_date],&quot;%d/%m/%Y&quot;))&#xA;OR !IsNull(DateTimeParse([submission_date],&quot;%d-%b-%Y&quot;))&#xA;),&#xA;&quot;NONSTANDARD_SUBMISSION_DATE; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(&#xA;    !IsNull([invoice_id])&#xA;    AND !IsEmpty(Trim([invoice_id]))&#xA;    AND !REGEX_Match(&#xA;        UpperCase(Trim([invoice_id])),&#xA;        &quot;^INV-[0-9]{6}$&quot;&#xA;    ),&#xA;    &quot;INVALID_INVOICE_ID; &quot;,&#xA;    &quot;&quot;&#xA;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([transaction_date]) OR IsEmpty(Trim([transaction_date])),&#xA;&quot;MISSING_TRANSACTION_DATE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!IsNull([transaction_date])&#xA;AND !IsEmpty(Trim([transaction_date]))&#xA;AND IsNull(DateTimeParse([transaction_date],&quot;%Y-%m-%d&quot;))&#xA;AND IsNull(DateTimeParse([transaction_date],&quot;%d/%m/%Y&quot;))&#xA;AND IsNull(DateTimeParse([transaction_date],&quot;%d-%b-%Y&quot;)),&#xA;&quot;INVALID_TRANSACTION_DATE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!IsNull([transaction_date])&#xA;AND !IsEmpty(Trim([transaction_date]))&#xA;AND IsNull(DateTimeParse([transaction_date],&quot;%Y-%m-%d&quot;))&#xA;AND (&#xA;!IsNull(DateTimeParse([transaction_date],&quot;%d/%m/%Y&quot;))&#xA;OR !IsNull(DateTimeParse([transaction_date],&quot;%d-%b-%Y&quot;))&#xA;),&#xA;&quot;NONSTANDARD_TRANSACTION_DATE; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([transaction_type]) OR IsEmpty(Trim([transaction_type])),&#xA;&quot;MISSING_TRANSACTION_TYPE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([transaction_type])&#xA;AND [transaction_type] != UpperCase(Trim([transaction_type])),&#xA;&quot;TRANSACTION_TYPE_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;UpperCase(Trim([transaction_type])) != &quot;SALE&quot;&#xA;AND UpperCase(Trim([transaction_type])) != &quot;PURCHASE&quot;&#xA;AND UpperCase(Trim([transaction_type])) != &quot;CREDIT_NOTE&quot;&#xA;AND UpperCase(Trim([transaction_type])) != &quot;IMPORT&quot;,&#xA;&quot;INVALID_TRANSACTION_TYPE; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([gst_code]) OR IsEmpty(Trim([gst_code])),&#xA;&quot;MISSING_GST_CODE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([gst_code])&#xA;AND [gst_code] != UpperCase(Trim([gst_code])),&#xA;&quot;GST_CODE_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;UpperCase(Trim([gst_code])) != &quot;SR&quot;&#xA;AND UpperCase(Trim([gst_code])) != &quot;ZR&quot;&#xA;AND UpperCase(Trim([gst_code])) != &quot;ES&quot;&#xA;AND UpperCase(Trim([gst_code])) != &quot;TX&quot;,&#xA;&quot;INVALID_GST_CODE; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([taxable_amount]) OR IsEmpty(Trim([taxable_amount])),&#xA;&quot;MISSING_TAXABLE_AMOUNT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!IsNull([taxable_amount])&#xA;AND !IsEmpty(Trim([taxable_amount]))&#xA;AND (&#xA;Contains([taxable_amount],&quot;$&quot;)&#xA;OR Contains([taxable_amount],&quot;,&quot;)&#xA;),&#xA;&quot;AMOUNT_NEEDS_STANDARDISATION; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!REGEX_Match(&#xA;Replace(Replace(Trim([taxable_amount]),&quot;$&quot;,&quot;&quot;),&quot;,&quot;,&quot;&quot;),&#xA;&quot;^-?[0-9]+([.][0-9]{1,2})?$&quot;&#xA;),&#xA;&quot;INVALID_AMOUNT_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;REGEX_Match(&#xA;Replace(Replace(Trim([taxable_amount]),&quot;$&quot;,&quot;&quot;),&quot;,&quot;,&quot;&quot;),&#xA;&quot;^-[0-9]+([.][0-9]{1,2})?$&quot;&#xA;),&#xA;&quot;NEGATIVE_AMOUNT; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([gst_rate]) OR IsEmpty(Trim([gst_rate])),&#xA;&quot;MISSING_GST_RATE; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!REGEX_Match(Trim([gst_rate]),&quot;^[0-9]+([.][0-9]{1,2})?$&quot;),&#xA;&quot;INVALID_GST_RATE_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;REGEX_Match(Trim([gst_rate]),&quot;^[0-9]+([.][0-9]{1,2})?$&quot;)&#xA;AND Trim([gst_rate]) != &quot;0.00&quot;&#xA;AND Trim([gst_rate]) != &quot;0.09&quot;,&#xA;&quot;UNEXPECTED_GST_RATE; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([declared_gst]) OR IsEmpty(Trim([declared_gst])),&#xA;&quot;MISSING_DECLARED_GST; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(&#xA;!REGEX_Match(&#xA;Replace(Replace(Trim([declared_gst]),&quot;$&quot;,&quot;&quot;),&quot;,&quot;,&quot;&quot;),&#xA;&quot;^[0-9]+([.][0-9]{1,2})?$&quot;&#xA;),&#xA;&quot;INVALID_DECLARED_GST_FORMAT; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([currency]) OR IsEmpty(Trim([currency])),&#xA;&quot;MISSING_CURRENCY; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([currency])&#xA;AND [currency] != UpperCase(Trim([currency])),&#xA;&quot;CURRENCY_FORMAT; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(UpperCase(Trim([currency])) != &quot;SGD&quot;,&#xA;&quot;INVALID_CURRENCY; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([supplier_tax_id]) OR IsEmpty(Trim([supplier_tax_id])),&#xA;&quot;MISSING_SUPPLIER_TAX_ID; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(UpperCase(Trim([supplier_tax_id])),&quot;^SG[0-9]{7}A$&quot;),&#xA;&quot;INVALID_SUPPLIER_TAX_ID; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([customer_tax_id]) OR IsEmpty(Trim([customer_tax_id])),&#xA;&quot;MISSING_CUSTOMER_TAX_ID; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!REGEX_Match(UpperCase(Trim([customer_tax_id])),&quot;^SG[0-9]{7}A$&quot;),&#xA;&quot;INVALID_CUSTOMER_TAX_ID; &quot;,&quot;&quot;)&#xA;&#xA;+&#xA;&#xA;IIF(IsNull([description]) OR IsEmpty(Trim([description])),&#xA;&quot;MISSING_DESCRIPTION; &quot;,&quot;&quot;)&#xA;+&#xA;IIF(!IsNull([description])&#xA;AND !IsEmpty(Trim([description]))&#xA;AND [description] != Trim([description]),&#xA;&quot;DESCRIPTION_WHITESPACE; &quot;,&quot;&quot;)&#xA;" field="DQ_Issue_Details" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DQ_Issue_Details = 
+IIF(IsNull([record_id]) OR IsEmpty(Trim([record_id])),
+"MISS...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1997" y="149" width="865" height="349" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output For Reporting or Downstream Usage (i.e. Tableau / Excel / Email to MassCom)</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output For Reporting or Downstream Usage (i.e. Tableau / Excel / Email to MassCom)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2778" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\JELLOS~1\AppData\Local\Temp\Alteryx\Engine_21000_d3ee4876dc82430e9837484c2ff310ba_\Engine_21000_022bb077a697493aaade740be3850523~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="2286" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Header</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+{\*\generator Riched20 10.0.26100}\viewkind4\uc1 
+\pard\fs24 Dear Team , \par
+\par
+Please find the flagged records and cross check with upstream and frontend team for data remediation.\par
+\par
+\par
+\par
+\f1\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Dear Team , 
+
+Please find the ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+            <Position x="2466" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TableMode>Basic</TableMode>
+              <GroupingFields orderChanged="False" />
+              <Width>100%</Width>
+              <ShowHeader value="True" />
+              <ShowBarGraph value="False" />
+              <TableFields orderChanged="False">
+                <Field name="record_id" selected="True" Alignment="Left" />
+                <Field name="filing_id" selected="True" Alignment="Left" />
+                <Field name="business_id" selected="True" Alignment="Left" />
+                <Field name="tax_period" selected="True" Alignment="Left" />
+                <Field name="invoice_id" selected="True" Alignment="Left" />
+                <Field name="transaction_date" selected="True" Alignment="Left" />
+                <Field name="transaction_type" selected="True" Alignment="Left" />
+                <Field name="gst_code" selected="True" Alignment="Left" />
+                <Field name="taxable_amount" selected="True" Alignment="Left" />
+                <Field name="gst_rate" selected="True" Alignment="Left" />
+                <Field name="declared_gst" selected="True" Alignment="Left" />
+                <Field name="currency" selected="True" Alignment="Left" />
+                <Field name="supplier_tax_id" selected="True" Alignment="Left" />
+                <Field name="customer_tax_id" selected="True" Alignment="Left" />
+                <Field name="description" selected="True" Alignment="Left" />
+                <Field name="DQ_Issue_Details" selected="True" Alignment="Left" />
+                <Field name="submission_date" selected="False" />
+                <Field name="standard_rate" selected="False" />
+                <Field name="expected_treatment" selected="False" />
+                <Field name="Header" selected="False" />
+                <Field name="*Unknown" selected="False" />
+              </TableFields>
+              <TableStyles>
+                <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+              </TableStyles>
+              <StyleRules />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="PortfolioPluginsGui.Email.Email">
+            <Position x="2682" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SMTPServerName />
+              <ToIsField value="False" />
+              <To />
+              <CcIsField value="False" />
+              <Cc />
+              <BccIsField value="False" />
+              <Bcc />
+              <FromIsField value="False" />
+              <From />
+              <SubjectIsField value="False" />
+              <Subject />
+              <BodyIsField value="True" />
+              <Body>Table</Body>
+              <UserName />
+              <MipSensitivity />
+              <MipTenantId />
+              <Enabled>True</Enabled>
+              <Connection DcmType="ConnectionId">
+              </Connection>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxComposerEmail" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2022" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotEmpty</Operator>
+                <Field>DQ_Issue_Details</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2026-11-26 15:05:47</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2026-11-26 15:05:47</StartDate>
+                  <EndDate>2026-11-26 15:05:47</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsEmpty([DQ_Issue_Details])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="2718" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="19">
+                <Compact>Snappy</Compact>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <SuppressBlankFile>False</SuppressBlankFile>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="19" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Join" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="14" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Unique" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Tax_Report_Alteryx_Data_Processing</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6f39bd13-6cea-4eb0-af23-d440e9c44db8" />
+      <Telemetry>
+        <PreviousWorkflowId value="2a45e08e-6742-46ca-b77d-fe7d48ab898c" />
+        <OriginWorkflowId value="2a45e08e-6742-46ca-b77d-fe7d48ab898c" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
