@@ -1,5 +1,5 @@
 
-Dear Recruiter , please read and review my Alteryx file ! I particularly love alteryx as it gives a quick and optimize way of handling big data !
+Dear Recruiter , please download and review my Alteryx file ! I particularly love alteryx as it gives a quick and optimize way of handling big data !
 Personally , it feels like playing a puzzle :3 ~ 
 
 ## Project Overview
