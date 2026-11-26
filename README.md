@@ -38,9 +38,9 @@ Raw Data → Standardisation → Data Quality Validation → Exception Handling 
 3. Business reference enrichment
 4. Tax anomaly monitoring output
 
-## Tools
+## Possible Output Tools
 
-Alteryx Designer, Microsoft Excel and Tableau (for downstream visualisation).
+Alteryx Designer, Microsoft Excel or Tableau (for downstream visualisation).etc
 
 ## Disclaimer
 
